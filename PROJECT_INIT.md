@@ -165,8 +165,8 @@ Uma tarefa (TODO) só é considerada concluída quando:
 
 ### 🟢 P0 — Prioridade Alta (Fundação)
 
-- [ ] **[P0-01]** Criar o repositório GitHub prompt-mentor.
-- [ ] **[P0-02]** Adicionar LICENSE (MIT).
+- [x] **[P0-01]** Criar o repositório GitHub prompt-mentor.
+- [x] **[P0-02]** Adicionar LICENSE (MIT).
 - [ ] **[P0-03]** Adicionar PROJECT_INIT.md com escopo definido (este arquivo).
 - [ ] **[P0-04]** Criar MENTOR_SENIOR_ENGINEERING_GUIDE.md como guia central.
 - [ ] **[P0-05]** Criar prompt_config.yaml com parâmetros ajustáveis.
