@@ -287,3 +287,20 @@ OPENAI_API_KEY="SUA_CHAVE_API_AQUI"
 - [ ] **[Testes]** A cobertura de testes está igual ou superior a 70%.
 - [ ] **[Logs]** O logging necessário foi implementado.
 ```
+
+---
+
+## 9. Monitoramento e Segurança
+
+- Incluir configuração de logging estruturado para facilitar auditorias.
+- Adicionar testes específicos focados em segurança, rodados na pipeline CI.
+- Definir métricas para cobertura de testes, bugs, e vulnerabilidades.
+- Revisar política de segurança e dependências regularmente.
+
+---
+
+## 10. Processo de Deploy Seguro
+
+- Documentar processos para rollback, backups e monitoramento pós-deploy.
+- Incluir etapas de validação de segurança antes do deploy em produção.
+- Automatizar deploys com ferramentas como Docker, Kubernetes, ou CI/CD.
