@@ -393,7 +393,7 @@ class CommandInput(BaseModel):
 
 def main(args):
     try:
-        data = CommandInput(command=args, argument=args)[1]
+        data = CommandInput(command=args[0], argument=args[1])
     except ValidationError as err:
         print("Erro de validação:", err)
         return
