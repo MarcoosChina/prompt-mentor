@@ -198,7 +198,7 @@ Uma tarefa (TODO) só é considerada concluída quando:
       *Incluir campos de configuração de segurança (tokens, modelo, endpoint) com placeholders e leitura via variáveis de ambiente.*
 - [x] **[P0-06]** Criar .gitignore com regras básicas para Python (ex: .env, `__pycache__`, .venv, .pytest_cache, *.pyc).
 - [x] **[P0-07]** Adicionar README.md inicial com propósito e estrutura.
-- [ ] **[P0-08]** Montar estrutura de diretórios inicial (mentor/, docs/, examples/, .vscode/).
+- [x] **[P0-08]** Montar estrutura de diretórios inicial (mentor/, docs/, examples/, .vscode/).
 - [ ] **[P0-09]** Documentar filosofia e boas práticas de engenharia de prompt.
 - [ ] **[P0-10]** Inicializar o projeto com `Poetry` (criando o `pyproject.toml`).
 - [ ] **[P0-11]** Adicionar dependências básicas de projeto e qualidade via Poetry (ex: PyYAML, rich, typer, pytest, pytest-cov, black, isort, flake8, bandit, safety, python-dotenv, mkdocs).
