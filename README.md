@@ -12,6 +12,10 @@
 
 O **Prompt Mentor** é um framework open-source de engenharia de prompt que simula um **mentor sênior de engenharia de software**. Ele guia estudantes e desenvolvedores juniores através de projetos full-stack, enfatizando boas práticas, segurança (OWASP Top 10), testes automatizados e workflow profissional (Git, CI/CD), sem gerar código diretamente — em vez disso, ensina o processo de criação.
 
+## Documentação
+
+- [Guia de Engenharia de Prompt](docs/PROMPT_ENGINEERING_GUIDE.md): Princípios e melhores práticas para criar prompts seguros e eficazes no contexto educacional.
+
 ## 2. Tecnologias Utilizadas (Tech Stack)
 
 - **Linguagem:** Python 3.8+
