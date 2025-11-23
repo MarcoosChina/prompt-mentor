@@ -51,7 +51,7 @@ O **Prompt Mentor** é um framework open-source de engenharia de prompt que simu
    cp .env.example .env
 ```
 
-*Preencha as variáveis no `.env` com suas chaves API (ex: OPENAI_API_KEY). Nunca commite este arquivo.*
+   *Preencha as variáveis no `.env` com suas chaves API (ex: OPENAI_API_KEY). Nunca commite este arquivo.*
 
 3 Instale as dependências com Poetry:
 
@@ -68,7 +68,7 @@ O **Prompt Mentor** é um framework open-source de engenharia de prompt que simu
 5 (Atualmente CLI-only) Teste a configuração:
 
 ```bash
-    poetry run python -c "print('Configuração completa. Aguarde futuras versões para CLI interativa.')"
+   poetry run python -c "print('Configuração completa. Aguarde futuras versões para CLI interativa.')"
 ```
 
 ## 4. Testes
@@ -76,18 +76,18 @@ O **Prompt Mentor** é um framework open-source de engenharia de prompt que simu
 Execute os testes para validar a configuração:
 
 ```bash
-    poetry run pytest
+poetry run pytest
 ```
 
 Para relatório de cobertura:
 
 ```bash
-    poetry run pytest --cov
+poetry run pytest --cov
 ```
 
 ## 5. Funcionalidades
 
-- **Mentoria Guiada:** Respostas estruturadas com exemplos, diffs e commits simulados.
+- **Mentoria Interativa:** Um fluxo consultivo que guia o desenvolvimento em etapas (Planejamento -> Código -> Testes), garantindo que você entenda e valide cada peça antes de avançar.
 - **Foco Educacional:** Ensina engenharia, não apenas código (qualidade > velocidade).
 - **Segurança por Padrão:** Validação OWASP, hashing de senhas, sanitização de entradas.
 - **Configurável:** Suporte a OpenAI e Google AI via YAML.
@@ -107,7 +107,7 @@ Contribuições são bem-vindas! Veja o `CONTRIBUTING.md` para guias detalhados 
 
 ## 9. Status do Projeto
 
-Este projeto está em **fase de fundação (P0 concluído até P0-06)**. Estrutura base (guia, config, README, .gitignore) estabelecida. Próximos passos: Poetry, estrutura de diretórios, testes expandidos.
+Este projeto está em **fase de fundação (P0 concluído até P0-09)**. Estrutura base, guia de prompt e configs estabelecidos. Próximos passos: Inicialização com Poetry, testes expandidos.
 
 Para backlog completo e roadmap, veja o `PROJECT_INIT.md`.
 
@@ -124,7 +124,7 @@ Para dúvidas, abra uma issue no [GitHub](https://github.com/tiagoeduardobr/prom
 
 ---
 
-*README atualizado para refletir o estado atual (CLI em desenvolvimento, foco em mentoria).*
+*README atualizado para refletir o estado atual (Foco em Mentoria Interativa e P0-09 concluído).*
 
 ## 12. Agradecimentos
 

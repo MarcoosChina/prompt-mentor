@@ -125,35 +125,11 @@ Usuário ─▶ Prompt Principal (MENTOR_SENIOR_ENGINEERING_GUIDE.md)
 
 ## Filosofia de Engenharia
 
-- Clareza sobre complexidade.  
-- Transparência e rastreabilidade.  
-- Segurança e ética em todas as interações.  
-- Reprodutibilidade e documentação contínua.  
-- Evolução modular e incremental.
-
----
-
-## Monitoramento e Logging
-
-- Implementar logger estruturado configurável para diferentes níveis de log (INFO, DEBUG, ERROR)
-- Centralizar configurações de logging em módulo dedicado (`cli/logging_config.py`)
-
-## Testes de Segurança Automatizados
-
-- Incluir testes automatizados para fuzz testing e validação rigorosa de entradas
-- Rodar testes em CI/CD para detectar vulnerabilidades precocemente
-
-## Gestão e Atualização da Política de Segurança
-
-- Estabelecer revisão periódica da política OWASP Top 10 adotada e atualizações de bibliotecas críticas
-
-## Gestão de Tokens e Autenticação Segura
-
-- Planejar módulo de autenticação JWT seguro, com validação e expiração claras
-
-## Validação Estrita no CLI
-
-- Validar entradas do usuário no `cli/mentor_cli.py` usando Pydantic para evitar vulnerabilidades
+**Clareza sobre Complexidade:** Priorizar explicações simples para conceitos difíceis.
+**Transparência e Rastreabilidade:** Todo código deve ter um "porquê" claro.
+**Segurança e Ética:** Segurança por design em todas as interações.
+**Reprodutibilidade:** Documentação contínua e ambientes controlados.
+**Mentoria Consultiva ("Stop & Ask"):** Valorizar o entendimento passo-a-passo sobre a entrega monolítica. O código é consequência do aprendizado, não o fim único.
 
 ---
 
@@ -199,7 +175,7 @@ Uma tarefa (TODO) só é considerada concluída quando:
 - [x] **[P0-06]** Criar .gitignore com regras básicas para Python (ex: .env, `__pycache__`, .venv, .pytest_cache, *.pyc).
 - [x] **[P0-07]** Adicionar README.md inicial com propósito e estrutura.
 - [x] **[P0-08]** Montar estrutura de diretórios inicial (mentor/, docs/, examples/, .vscode/).
-- [x] **[P0-09]** Documentar filosofia e boas práticas de engenharia de prompt.
+- [x] **[P0-09]** Documentar filosofia e boas práticas de engenharia de prompt (criado `docs/PROMPT_ENGINEERING_GUIDE.md`).
 - [ ] **[P0-10]** Inicializar o projeto com `Poetry` (criando o `pyproject.toml`).
 - [ ] **[P0-11]** Adicionar dependências básicas de projeto e qualidade via Poetry (ex: PyYAML, rich, typer, pytest, pytest-cov, black, isort, flake8, bandit, safety, python-dotenv, mkdocs).
 - [ ] **[P0-12]** Configurar .env.example com variáveis de ambiente seguras.
@@ -219,7 +195,22 @@ Uma tarefa (TODO) só é considerada concluída quando:
 - [ ] **[P0-26]** Reforçar validação de entrada CLI utilizando Pydantic no arquivo `cli/mentor_cli.py`.
 - [ ] **[P0-27]** Adicionar documentação para processo de deploy seguro e rollback em `docs/DEPLOYMENT.md`.
 - [ ] **[P0-28]** Estabelecer revisão periódica da política de segurança e atualização do OWASP Top 10 (documentação e cronogramas).
-*[P1-12]** Integrar badges (Shields.io) de status do CI, code coverage e licença no README.md.
+-*[P1-12]** Integrar badges (Shields.io) de status do CI, code coverage e licença no README.md.
+
+### 🟡 P1 — Prioridade Média (Expansão)
+
+- [ ] **[P1-01]** Criar diretório mentor/specializations/ com subprompts temáticos.
+- [ ] **[P1-02]** Implementar tests/test_prompt_format.py para validar consistência de saída.
+- [ ] **[P1-03]** Criar examples/example_request.md e example_output.md.
+- [ ] **[P1-04]** Documentar uso no docs/PROMPT_ENGINEERING_GUIDE.md.
+- [ ] **[P1-05]** Definir guidelines de commits e PRs simulados.
+- [ ] **[P1-06]** Criar workflow .github/workflows/validate_prompts.yml para CI (validação de formato).
+- [ ] **[P1-07]** Criar workflow .github/workflows/validate_security.yml (CI) para rodar `bandit` e `safety` e verificar segredos hardcoded.
+- [ ] **[P1-08]** Criar módulo de abstração de modelos LLM em cli/mentor_cli.py para facilitar troca entre OpenAI, local e outros.
+- [ ] **[P1-09]** Incluir testes de fallback para modelos locais (open-source) no test_output_quality.py.
+- [ ] **[P1-10]** Criar Dockerfile para a aplicação CLI (mentor_cli.py) e garantir reprodutibilidade.
+- [ ] **[P1-11]** Criar docker-compose.yml para facilitar a execução de testes e da CLI (`docker-compose run test`).
+- [ ] **[P1-12]** Integrar badges (Shields.io) de status do CI, code coverage e licença no README.md.
 
 ### 🔵 P2 — Prioridade Baixa (Integração e Educação)
 
